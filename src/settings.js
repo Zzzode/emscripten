@@ -1999,6 +1999,16 @@ var TRUSTED_TYPES = false;
 // settings is *only* needed when also explicitly targeting older browsers.
 var POLYFILL = true;
 
+// If true, add tracing to core runtime functions.
+// This settings is enabled by default is any of the other debugging settings
+// are enabled:
+// - PTHREADS_DEBUG
+// - DYLINK_DEBUG
+// - LIBRARY_DEBUG
+// - GL_DEBUG
+// [link]
+var RUNTIME_DEBUG = false;
+
 //===========================================
 // Internal, used for testing only, from here
 //===========================================
